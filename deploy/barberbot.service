@@ -1,0 +1,26 @@
+[Unit]
+Description=Barbershop Telegram Bot
+# Стартовать после сети (Telegram API доступен через интернет)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=barberbot
+Group=barberbot
+WorkingDirectory=/opt/barberbot/bot_manik
+# .env лежит в WorkingDirectory и подхватывается python-dotenv
+ExecStart=/opt/barberbot/bot_manik/venv/bin/python bot.py
+Restart=always
+RestartSec=5
+
+# --- Лёгкая изоляция, чтобы не мешать VPN и системе ---
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+# Ограничение памяти (страховка на слабом VPS)
+MemoryMax=300M
+
+[Install]
+WantedBy=multi-user.target
