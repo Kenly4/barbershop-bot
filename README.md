@@ -9,15 +9,7 @@
 
 ## 🎥 Демонстрация
 
-- **Живой бот:** [@your_demo_bot](https://t.me/your_demo_bot) — нажмите «Запустить» и попробуйте записаться
-- **Видео работы:** _ссылка на видео/GIF_
-- **Скриншоты:** папка [`docs/screenshots`](docs/screenshots)
-
-<!-- Вставьте скриншоты после записи демо:
-![Главное меню](docs/screenshots/menu.png)
-![Выбор времени](docs/screenshots/slots.png)
-![Панель настроек](docs/screenshots/settings.png)
--->
+- **Живой бот:** [@BOT_USERNAME](https://t.me/BOT_USERNAME) — нажмите «Запустить» и попробуйте записаться
 
 ---
 
